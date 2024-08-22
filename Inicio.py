@@ -7,12 +7,12 @@ from PIL import Image
 from streamlit_extras.mention import mention
 import streamlit.components.v1 as components
 
-st.set_page_config(page_title="Proyecto", page_icon="📈")
+
 import base64
 import streamlit as st
 from streamlit_option_menu import option_menu
-import importlib
 
+st.set_page_config(page_title="Proyecto", page_icon="📈")
 #if 'page' not in st.session_state:
 #    st.session_state['page'] = 'Inicio'
 
