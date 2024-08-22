@@ -7,12 +7,12 @@ from PIL import Image
 from streamlit_extras.mention import mention
 import streamlit.components.v1 as components
 
-
+st.set_page_config(page_title="Proyecto", page_icon="📈")
 import base64
 import streamlit as st
 from streamlit_option_menu import option_menu
+import importlib
 
-st.set_page_config(page_title="Proyecto", page_icon="📈")
 #if 'page' not in st.session_state:
 #    st.session_state['page'] = 'Inicio'
 
@@ -147,8 +147,6 @@ st.markdown(
 )
 
 
-
-
 # Botones ocultos para cambiar la página en el estado de Streamlit
 #st.markdown('<a id="inicio" style="display:none;" ></a>', unsafe_allow_html=True)
 #st.markdown('<a id="proyectos" style="display:none;" ></a>', unsafe_allow_html=True)
@@ -196,17 +194,46 @@ right: 2rem;
 """
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
+import streamlit as st
+
+# CSS para el cuadro
+st.markdown("""
+    <style>
+    .cuadro {
+        border: 2px solid #333; /* Borde del cuadro */
+        padding: 15px; /* Espaciado interno */
+        margin: 20px; /* Espaciado externo */
+        border-radius: 8px; /* Esquinas redondeadas */
+        background-color: #f5f5f5; /* Color de fondo */
+        width: fit-content; /* Ajusta el ancho al contenido */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    }
+    .texto-grande {
+        font-size: 1.2em; /* Tamaño del texto */
+        color: #333; /* Color del texto */
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# HTML para el cuadro
+
+
+
+
 #st.subheader(":orange[Bienvenidos] 👋")
 import streamlit as st
 
 # Insertando CSS para personalizar el título con una nueva fuente y más estilos
+
+
+
 st.markdown(
     """
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
     .custom-title {
-        font-family: 'Comic Sans', new york;
+        font-family: 'Comic Sans', selif;
         font-size: 48px;
         font-weight: bold;
         color: #24211e;
@@ -314,9 +341,9 @@ with left1:
 with right1:
   st.markdown("**Telefono/Watsap**")
   st.markdown("+5698306909")
- 
+
  #st.sidebar.header("Barra de proyectos")
- #st.sidebar.write("Selecciona un proyecto")
+#st.sidebar.write("Selecciona un proyecto")
 #st.subhe
 #ader("Problema")
 
